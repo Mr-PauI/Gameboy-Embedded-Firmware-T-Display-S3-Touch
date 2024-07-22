@@ -2,7 +2,7 @@ This is a simple program to allow you to merge your .rom files with
 the Gameboy Embedded Firmware .bin file; after this operation is complete
 it will regenerate the CRC for the .bin files integrity.
 
-To use this tool, launch the mergetool.ege, select file->merge ROM.
+To use this tool, launch the merge_tool.exe, select file->merge ROM.
 1) select the ROM you wish to merge with the binary
 2) select the ORIGINAL gameboy embedded firmware .bin file (the pattern it looks for is not present in already merged .bins)
 3) select the name of the output .bin file, ie: mario.bin or spaceinvaders.bin
