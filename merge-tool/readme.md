@@ -1,6 +1,10 @@
 This is a simple program to allow you to merge your .rom files with 
 the Gameboy Embedded Firmware .bin file; after this operation is complete
-it will regenerate the CRC for the .bin files integrity.
+it will regenerate the CRC for the .bin files integrity. This software can
+also revalidate your own .bins after you have made external edits. You should
+be aware of the data segments when making edits as corrupt values in the segment
+headers will cause unpredictable behaviour and most likley result in an incorrect
+crc value.
 
 To use this tool, launch the merge_tool.exe, select file->merge ROM.
 1) select the ROM you wish to merge with the binary
@@ -16,3 +20,6 @@ that the majority of users once exposed to the utility of m5launcher will decide
 unnesesary complication.
 
 The launcher can be installed from https://bmorcelli.github.io/M5Stick-Launcher/flash0.html
+
+Revalidating an existing .bin file can be done by selecting File->Revalidate .BIN
+In version 0.5 only the CRC is regenerated, and the sha256 hash is disabled.
